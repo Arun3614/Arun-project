@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Booking - Narsampet Rides</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+        }
+
+        .booking-container {
+            width: 85%;
+            max-width: 420px;
+            background: #ffffff;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            border-radius: 6px;
+            border: 1px solid #aaa;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            background: #ffcc00;
+            padding: 12px;
+            text-align: center;
+            color: black;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #e0b400;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="booking-container">
+    <h1>Book Your Ride</h1>
+
+    <label>Pickup Location:</label>
+    <input type="text" placeholder="Enter Pickup Point" required>
+
+    <label>Drop Location:</label>
+    <input type="text" placeholder="Enter Drop Point" required>
+
+    <label>Select Vehicle:</label>
+    <select required>
+        <option value="">--Choose Vehicle--</option>
+        <option>Bike (Fast & Cheap)</option>
+        <option>Auto (Comfort Ride)</option>
+        <option>Cab (Premium)</option>
+    </select>
+
+    <label>Ride Type:</label>
+    <select>
+        <option>Normal Ride</option>
+        <option>Fast Ride</option>
+        <option>Premium Ride</option>
+    </select>
+
+    <label>Time of Ride:</label>
+    <select>
+        <option>Ride Now</option>
+        <option>Schedule Ride</option>
+    </select>
+
+    <a href="#" class="btn">Confirm Booking</a>
+</div>
+
+</body>
+</html>
